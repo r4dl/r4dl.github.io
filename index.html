@@ -2,251 +2,260 @@
 <script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
 <style type="text/css">
-	body {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		font-weight:300;
-		font-size:18px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 1100px;
-	}
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
 
-	h1 {
-		font-size:32px;
-		font-weight:300;
-	}
+    h1 {
+        font-size: 32px;
+        font-weight: 300;
+    }
 
-	.disclaimerbox {
-		background-color: #eee;
-		border: 1px solid #eeeeee;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-		padding: 20px;
-	}
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        padding: 20px;
+    }
 
-	video.header-vid {
-		height: 140px;
-		border: 1px solid black;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
 
-	img.header-img {
-		height: 140px;
-		border: 1px solid black;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
 
-	img.rounded {
-		border: 1px solid #eeeeee;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
 
-	a:link,a:visited
-	{
-		color: #1367a7;
-		text-decoration: none;
-	}
-	a:hover {
-		color: #208799;
-	}
+    a:link, a:visited {
+        color: #1367a7;
+        text-decoration: none;
+    }
 
-	td.dl-link {
-		height: 160px;
-		text-align: center;
-		font-size: 22px;
-	}
+    a:hover {
+        color: #208799;
+    }
 
-	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-				0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-				5px 5px 0 0px #fff, /* The second layer */
-				5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-				10px 10px 0 0px #fff, /* The third layer */
-				10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-				15px 15px 0 0px #fff, /* The fourth layer */
-				15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-				20px 20px 0 0px #fff, /* The fifth layer */
-				20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-				25px 25px 0 0px #fff, /* The fifth layer */
-				25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-		margin-left: 10px;
-		margin-right: 45px;
-	}
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
 
-	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-				0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35), /* The top layer shadow */ 5px 5px 0 0px #fff, /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35), /* The second layer shadow */ 10px 10px 0 0px #fff, /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35), /* The third layer shadow */ 15px 15px 0 0px #fff, /* The fourth layer */ 15px 15px 1px 1px rgba(0, 0, 0, 0.35), /* The fourth layer shadow */ 20px 20px 0 0px #fff, /* The fifth layer */ 20px 20px 1px 1px rgba(0, 0, 0, 0.35), /* The fifth layer shadow */ 25px 25px 0 0px #fff, /* The fifth layer */ 25px 25px 1px 1px rgba(0, 0, 0, 0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
 
-		margin-left: 10px;
-		margin-right: 45px;
-	}
+    .paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35); /* The top layer shadow */
+
+        margin-left: 10px;
+        margin-right: 45px;
+    }
 
 
-	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-				0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-				5px 5px 0 0px #fff, /* The second layer */
-				5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-				10px 10px 0 0px #fff, /* The third layer */
-				10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-		margin-top: 5px;
-		margin-left: 10px;
-		margin-right: 30px;
-		margin-bottom: 5px;
-	}
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35), /* The top layer shadow */ 5px 5px 0 0px #fff, /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35), /* The second layer shadow */ 10px 10px 0 0px #fff, /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
 
-	.vert-cent {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-	}
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-	hr
-	{
-		border: 0;
-		height: 1px;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	}
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
 
-	course
-	{
-		font-size:32pt;
-		font-family: Ubuntu;
-	}
+    course {
+        font-size: 32pt;;
+    }
 </style>
 
 <html>
 <head>
-	<title>Lukas Radl</title>
-	<meta property="og:image" content="images/IMG_0243.jpg"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Lukas Radl." />
-	<meta property="og:description" content="My personal webpage." />
-
-	<!-- Get from Google Analytics -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src=""></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-75863369-6');
-	</script>
+    <title>Lukas Radl</title>
+    <meta property="og:image" content="images/IMG_0243.jpg"/>
+    <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+    <meta property="og:title" content="Lukas Sebastian Radl."/>
+    <meta property="og:description" content="My personal webpage."/>
 </head>
 
 <body>
 <table align=center width=900px>
-	<table align=center width=900px>
-		<br>
-		<hr>
-		<table align=center width=450px>
-			<tr>
-				<td><a href=""><img style="height:155px" src="images/IMG_0243.jpg"/></a></td>
-				<td><span style="font-size:25pt; font-family: Ubuntu">Lukas Radl</span><br>
-					<span style="font-size:15pt">MSc Student <sup>&ddagger;</sup></span><br>
-					<span style="font-size:10pt">&ddagger; Visual Computing & Machine Learning</span><br>
-					<span style="font-size:10pt">Graz University of Technology</span><br>
-					<a href="https://github.com/r4dl"><img style="height:35px" src="images/github.png"></a>
-					<a href="https://scholar.google.com/citations?user=G_0ZsTIAAAAJ&hl=de"><img style="height:35px" src="images/scholar.png"></a>
-					<a href="https://www.linkedin.com/in/lradl/"><img style="height:35px" src="images/linkedin.png"></a>
-				</td>
-			</tr>
-		</table>
-	</table>
+    <table align=center width=900px>
+        <br>
+        <hr>
+        <table align=center width=450px>
+            <tr>
+                <td><a href=""><img style="height:155px" src="images/IMG_0243.jpg"/></a></td>
+                <td><span style="font-size:25pt; ">Lukas Radl</span><br>
+                    <span style="font-size:15pt">University Project Assistant </span><br>
+                    <span style="font-size:10pt">Graz University of Technology</span><br>
+                    <a href="https://github.com/r4dl" style="margin: 5px"><img style="height:35px" src="images/github.png"></a>
+                    <a href="https://scholar.google.com/citations?user=G_0ZsTIAAAAJ&hl=de" style="margin: 5px"><img style="height:35px"
+                                                                                                src="images/scholar.png"></a>
+                    <a href="https://www.linkedin.com/in/lradl/" style="margin: 5px"><img style="height:35px" src="images/linkedin.png"></a>
+                </td>
+            </tr>
+        </table>
+    </table>
 </table>
 <hr>
 <table align=center width=600px>
-	<tr>
-		<td>
-			I am a MSc Student at Graz University of Technology, focusing on Visual Computing and Machine Learning.
-			I obtained my BSc in Software Engineering and Management at Graz University of Technology in 2021.
-			I am a study assistant at the Institute of Computer Graphics and Vision for several courses,
-			both graduate and undergraduate, with a focus com Graphics and Vision.
-			My main research interest is Neural Rendering, which I work on at the GPU Computing group.
-		</td>
-	</tr>
+    <tr>
+        <td>
+            I am a University Project Assistant at Graz University of Technology, focusing on Inverse Rendering and 3D
+            Scene Representations.
+            Previously, I obtained my BSc and Dipl.-Ing. (equivalent to MSc) at Graz University of Technology in the field of Computer Science.
+            In addition to my research, I am also involved in several undergraduate and graduate courses focusing on Computer Graphics.
+        </td>
+    </tr>
 </table>
 <hr>
 <table align=center width=900px style="border-collapse:separate; border-spacing: 0 1em;">
-	<center style="margin-bottom: 6px">
-		<span style="font-size:22pt; font-family: Ubuntu;">Publications</span>
-	</center>
-	<center style="margin-bottom: 6px">
-		<span style="font-size:12pt; font-family: Ubuntu;">All relevant research conducted at Graz University of Technology, at the <a href="https://www.tugraz.at/institute/icg/home">ICG</a> .</span>
-	</center>
-	<tr>
-		<td width="15%"><a href=""><img style="height:100px" src="images/paper_stuff/activation.png"/></a></td>
-		<td>
-			<span style="font-size: 15pt;font-family: Ubuntu">Analyzing the Internals of Neural Radiance Fields</span><br>
-			<span style="font-size: 11pt">
-				<span style="font-weight: bolder">Lukas Radl</span>, Andreas Kurz, Markus Steinberger.<br>
-				arXiv Preprint, 2023.<br>
+    <center style="margin-bottom: 6px">
+        <span style="font-size:22pt;">Publications</span>
+    </center>
+    <center style="margin-bottom: 6px">
+        <span style="font-size:12pt;">All relevant research conducted at Graz University of Technology, at the <a
+                href="https://www.tugraz.at/institute/icg/home">ICG</a> .</span>
+    </center>
+    <tr>
+        <td width="15%"><a href=""><img style="height:100px" src="images/paper_stuff/stylizedflower.png"/></a></td>
+        <td>
+            <span style="font-size: 15pt;">LAENeRF: Local Appearance Editing of Neural Radiance Fields</span><br>
+            <span style="font-size: 11pt">
+				<span style="font-weight: bolder">Lukas Radl</span>, Michael Steiner, Andreas Kurz, Markus Steinberger.<br>
+				arXiv Preprint arXiv:2312.09913.<br>
 				2023.<br>
-				<a href="https://arxiv.org/pdf/2306.00696.pdf">[Paper]</a> <a href="https://r4dl.github.io/nerfinternals/">[Paper Website]</a> <a href="https://github.com/r4dl/nerfinternals">[Code]</a>
+				<a href="https://arxiv.org/pdf/2312.09913.pdf">[Paper]</a> <a
+                    href="https://r4dl.github.io/LAENeRF/">[Paper Website]</a> <a
+                    href="https://github.com/r4dl/LAENeRF">[Code]</a>
 			</span>
-		</td>
-	</tr>
-	<tr>
-		<td width="15%"><a href=""><img style="height:100px" src="images/paper_stuff/aorta.png"/></a></td>
-		<td>
-			<span style="font-size: 15pt; font-family: Ubuntu">AVT: Multicenter aortic vessel tree CTA dataset collection with ground truth segmentation masks</span><br>
-			<span style="font-size: 11pt">
+        </td>
+    </tr>
+    <tr>
+        <td width="15%"><a href=""><img style="height:100px" src="images/paper_stuff/activation.png"/></a></td>
+        <td>
+            <span style="font-size: 15pt;">Analyzing the Internals of Neural Radiance Fields</span><br>
+            <span style="font-size: 11pt">
+				<span style="font-weight: bolder">Lukas Radl</span>, Andreas Kurz, Markus Steinberger.<br>
+				arXiv Preprint arXiv:2306.00696.<br>
+				2023.<br>
+				<a href="https://arxiv.org/pdf/2306.00696.pdf">[Paper]</a> <a
+                    href="https://r4dl.github.io/nerfinternals/">[Paper Website]</a> <a
+                    href="https://github.com/r4dl/nerfinternals">[Code]</a>
+			</span>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%"><a href=""><img style="height:100px" src="images/paper_stuff/aorta.png"/></a></td>
+        <td>
+            <span style="font-size: 15pt; ">AVT: Multicenter aortic vessel tree CTA dataset collection with ground truth segmentation masks</span><br>
+            <span style="font-size: 11pt">
 				<span style="font-weight: bolder">Lukas Radl</span>, Yuan Jin, Antonio Pepe, Jianning Li, Christina Gsaxner, Fen-hua Zhao, Jan Egger.<br>
 				Data in Brief, <span>(40)</span>107801.<br>
 				2022.<br>
 				<a href="https://www.sciencedirect.com/science/article/pii/S2352340922000130">[Paper]</a>
 				<a href="https://figshare.com/articles/dataset/Aortic_Vessel_Tree_AVT_CTA_Datasets_and_Segmentations/14806362">[Dataset]</a>
 			</span>
-		</td>
-	</tr>
+        </td>
+    </tr>
 </table>
 <hr>
 <table align=center width=900px style="border-collapse:separate; border-spacing: 0 1em;">
-	<center style="margin-bottom: 2px">
-		<span style="font-size:22pt; font-family: Ubuntu;">Teaching</span>
-	</center>
-	<center style="margin-bottom: 6px">
-		<span style="font-size:12pt; font-family: Ubuntu;">All relevant experience at Graz University of Technology, at the <a href="https://www.tugraz.at/institute/icg/home">ICG</a> .</span>
-	</center>
-	<tr>
-		<td>
-			<center>2021 - 2023, Summer Semester</center><br>
-			<span style="font-size:14pt; font-family: Ubuntu; font-weight: bolder; color: #191919">Computer Vision</span><br>
-			<span style="font-size:12pt; font-family: Ubuntu">&bull; Basic Computer Vision. 500+ students. Assignment Interviews, Question Hours, Forum Support and Reference Solutions.</span>
-			<span style="font-size:14pt; font-family: Ubuntu; font-weight: bolder; color: #191919">Computer Graphics</span><br>
-			<span style="font-size:12pt; font-family: Ubuntu">&bull; Basic Computer Graphics. 500+ students. Assignment Interviews, Question Hours, Forum Support and Reference Solutions.</span>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<center>2022-2023, Winter Semester</center><br>
-			<span style="font-size:14pt; font-family: Ubuntu; font-weight: bolder; color: #191919">Real-Time Graphics<sup>&dagger;</sup></span><br>
-			<span style="font-size:12pt; font-family: Ubuntu">&bull;
+    <center style="margin-bottom: 2px">
+        <span style="font-size:22pt; ;">Teaching</span>
+    </center>
+    <center style="margin-bottom: 6px">
+        <span style="font-size:12pt; ;">All relevant experience at Graz University of Technology, at the <a
+                href="https://www.tugraz.at/institute/icg/home">ICG</a> .</span>
+    </center>
+    <tr>
+        <td>
+            <center>2023/24, Winter Semester</center>
+            <br>
+            <span style="font-size:14pt; ; font-weight: bolder; color: #191919">Real-Time Graphics</span><br>
+            <span style="font-size:12pt; ">&bull; Real-Time Special Effects in a Vulkan-based Framework.</span><br>
+            <span style="font-size:12pt; ">&bull; Exercise Organization, Grading and Support.</span>
+        </td>
+    </tr>
+</table>
+<hr>
+<table align=center width=900px style="border-collapse:separate; border-spacing: 0 1em;">
+    <center style="margin-bottom: 2px">
+        <span style="font-size:22pt; ;">Study Assistant Work</span>
+    </center>
+    <center style="margin-bottom: 6px">
+        <span style="font-size:12pt; ;">All relevant experience at Graz University of Technology, at the <a
+                href="https://www.tugraz.at/institute/icg/home">ICG</a> .</span>
+    </center>
+    <tr>
+        <td>
+            <center>2021 - 2023, Summer Semester</center>
+            <br>
+            <span style="font-size:14pt; ; font-weight: bolder; color: #191919">Computer Vision</span><br>
+            <span style="font-size:12pt; ">&bull; Basic Computer Vision. 500+ students. Assignment Interviews, Question Hours, Forum Support and Reference Solutions.</span>
+            <span style="font-size:14pt; ; font-weight: bolder; color: #191919">Computer Graphics</span><br>
+            <span style="font-size:12pt; ">&bull; Basic Computer Graphics. 500+ students. Assignment Interviews, Question Hours, Forum Support and Reference Solutions.</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <center>2022-2023, Winter Semester</center>
+            <br>
+            <span style="font-size:14pt; ; font-weight: bolder; color: #191919">Real-Time Graphics<sup>&dagger;</sup></span><br>
+            <span style="font-size:12pt; ">&bull;
 				Real-Time Special Effects, Shader Programming in Diligent Engine.
 				100+ students. Question Hours, Forum Support, Reference Solutions & Grading of submitted exercises (Code and PDF).</span>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<center>2023, Summer Semester</center><br>
-			<span style="font-size:14pt; font-family: Ubuntu; font-weight: bolder; color: #191919">Mathematical Principles in Visual Computing<sup>&dagger;</sup></span><br>
-			<span style="font-size:12pt; font-family: Ubuntu">&bull;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <center>2023, Summer Semester</center>
+            <br>
+            <span style="font-size:14pt; ; font-weight: bolder; color: #191919">Mathematical Principles in Visual Computing<sup>&dagger;</sup></span><br>
+            <span style="font-size:12pt; ">&bull;
 				Projective Geometry in Computer Vision and Computer Graphics.
 				20+ students. Question Hours, Forum Support and Grading of submitted exercises (Code & PDF).</span>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<span style="font-size:10pt; font-family: Ubuntu;"><span style="font-weight: bolder; color: #191919">&dagger;</span> denotes graduate courses.</span><br>
-		</td>
-	</tr>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span style="font-size:10pt; ;"><span style="font-weight: bolder; color: #191919">&dagger;</span> denotes graduate courses.</span><br>
+        </td>
+    </tr>
 </table>
 
 </body>
