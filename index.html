@@ -60,19 +60,13 @@
                                 List</a> of my faculty.
                             </p>
                             <p style="text-align:center">
-                                <a href="https://github.com/r4dl" style="margin: 5px"><img style="height:35px"
-                                                                                           src="ims/github.png"
-                                                                                           title="GitHub"></a>
-                                <a href="https://scholar.google.com/citations?user=G_0ZsTIAAAAJ&hl=de"
-                                   style="margin: 5px"><img style="height:35px" src="ims/scholar.png"
-                                                            title="Google Scholar"></a>
-                                <a href="https://www.linkedin.com/in/lradl/" style="margin: 5px"><img style="height:35px"
-                                                                                                      src="ims/linkedin.png"
-                                                                                                      title="LinkedIn"></a>
-                                <a href="mailto:lukas.radl@icg.tugraz.at" style="margin: 5px"><img style="height:35px" src="ims/email.png" title="E-Mail"></a>
-                                <a href="https://orcid.org/0009-0008-4075-5877" style="margin: 5px"><img style="height:35px" src="ims/orcid.png" title="ORCID"></a>
-                                <a href="https://www.youtube.com/@r4dl" style="margin: 5px"><img style="height:35px" src="ims/yt.png" title="YouTube"></a>
-                                <a href="https://x.com/rafourdl" style="margin: 5px"><img style="height:35px" src="ims/x.png" title="X"></a>
+                                <a href="https://github.com/r4dl" style="margin: 5px"><img class="ai-symbol" style="height:35px" src="ims/github.png" title="GitHub"></a>
+                                <a href="https://scholar.google.com/citations?user=G_0ZsTIAAAAJ&hl=de" class="ai-symbol" style="margin: 5px"><img style="height:35px" src="ims/scholar.png" title="Google Scholar"></a>
+                                <a href="https://www.linkedin.com/in/lradl/" class="ai-symbol" style="margin: 5px"><img style="height:35px" src="ims/linkedin.png" title="LinkedIn"></a>
+                                <a href="mailto:lukas.radl@icg.tugraz.at" class="ai-symbol" style="margin: 5px"><img style="height:35px" src="ims/email.png" title="E-Mail"></a>
+                                <a href="https://orcid.org/0009-0008-4075-5877" class="ai-symbol" style="margin: 5px"><img style="height:35px" src="ims/orcid.png" title="ORCID"></a>
+                                <a href="https://www.youtube.com/@r4dl" class="ai-symbol" style="margin: 5px"><img style="height:35px" src="ims/yt.png" title="YouTube"></a>
+                                <a href="https://x.com/rafourdl" class="ai-symbol" style="margin: 5px"><img style="height:35px" src="ims/x.png" title="X"></a>
                             </p>
                         </td>
                         <td style="padding:2.5%;width:40%;max-width:40%; border-bottom: 1px solid #222222;">
@@ -84,12 +78,13 @@
                     </tbody>
                 </table>
                 <!-- News -->
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; ">
                     <tbody>
                     <tr>
                         <td style="padding:20px;width:100%;vertical-align:middle">
                             <h2>News</h2>
                             <ul>
+                                <li><b>05/24:</b> <strong><a href="https://r4dl.github.io/StopThePop/">StopThePop</a></strong> has been accepted to SIGGRAPH'24 and will appear in ACM TOG 43(4).</li>
                                 <li><b>04/24:</b> Our <strong><a href="https://r4dl.github.io/nerfinternals/">NeRF Internals</a></strong> paper has been accepted to the CVPR'24 <a href="https://neural-rendering.com/">Workshop on Neural Rendering Intelligence</a>!</li>
                                 <li><b>02/24:</b> <strong><a href="https://r4dl.github.io/LAENeRF/">LAENeRF</a></strong> has been accepted to CVPR'24!</li>
                                 <li><b>02/24:</b> This page first goes online!</li>
@@ -116,12 +111,59 @@
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                 <tr>
+                    <tr onmouseout="stp_stop()" onmouseover="stp_start()">
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <div class="two" id='stp_image'>                                
+                                <img src='ims/stp.gif' width=100%></div>
+                                <img src='ims/stp.jpg' width=100%>
+                              </div>
+                              <script type="text/javascript">
+                                function stp_start() {
+                                  document.getElementById('stp_image').style.opacity = "1";
+                                }
+                      
+                                function stp_stop() {
+                                  document.getElementById('stp_image').style.opacity = "0";
+                                }
+                                stp_stop()
+                              </script>
+                        </td>
+                        <td width="75%" valign="middle">
+                            <a href="https://r4dl.github.io/StopThePop/">
+                                <span class="papertitle">StopThePop: Sorted Gaussian Splatting for View-Consistent Real-time Rendering</span>
+                            </a>
+                            <br>
+                            <strong>Lukas Radl*</strong>,
+                            <strong><a href="https://scholar.google.com/citations?user=Pbtgcz8AAAAJ&hl=de">Michael Steiner*</a></strong>,
+                            <a href="https://dabeschte.github.io/">Mathias Parger</a>,
+                            <a href="https://scholar.google.at/citations?user=pkqf2mgAAAAJ&hl=de">Alexander Weinrauch</a>,
+                            <a href="https://snosixtyboo.github.io/">Bernhard Kerbl</a>,
+                            <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                            <br>
+                            <em>SIGGRAPH</em>, 2024.
+                            <p>
+                                Sorting 3D Gaussians along view rays leads to increased view-consistency.
+                                With our hierarchical, GPU-friendly resorting scheme, our renderer is only 4% slower than 3DGS on average.
+                            </p>
+                            <p style="text-align:left">
+                                <a href="https://arxiv.org/pdf/2402.00525.pdf"><img class="ai-symbol" style="height:28px; margin: 3.5px; padding: 1px" src="ims/pdf.png" title="Paper"></a>
+                                <a href="https://r4dl.github.io/StopThePop/"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/wpage.png" title="Webpage"></a>
+                                <a href="https://github.com/r4dl/StopThePop"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/github.png" title="Code"></a>
+                                <a href="https://youtu.be/EmcXtHYhigk"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="ims/vid.png" title="Video" ></a>
+                                <a href="https://drive.google.com/file/d/1uk49LWsVjapLokTNHbTBMS8hMi3MuNDj/view?usp=sharing"><img img class="ai-symbol" style="height:29px; margin: 3.5px; padding: 0.5px"
+                                    src="ims/data.png" title="Data"></a>
+                                <a href="data/Radl2024StopThePop.bib"><img class="ai-symbol" style="height:25px; margin: 3.5px; padding: 2.5px" src="ims/citation.png" title="Bibtex"></a>
+                            </p>
+                        </td>
+                    </tr>
+                <tr>
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <img src="ims/paper_stuff/stylizedflower.png" alt="clean-usnob" width="160" height="160">
                     </td>
                     <td width="75%" valign="middle">
                         <a href="https://r4dl.github.io/LAENeRF/">
-                            <span class="papertitle">LAENeRF: Local Appearance Editing of Neural Radiance Fields</span>
+                            <span class="papertitle">LAENeRF: Local Appearance Editing for Neural Radiance Fields</span>
                         </a>
                         <br>
                         <strong>Lukas Radl</strong>,
@@ -135,13 +177,13 @@
                             <!--                            Our method reduces background artefacts while retaining fine details and view-consistency.-->
                         </p>
                         <p style="text-align:left">
-                            <a href="https://arxiv.org/pdf/2312.09913.pdf"><img style="height:28px; margin: 3.5px; padding: 1px" src="ims/pdf.png" title="Paper"></a>
-                            <a href="https://r4dl.github.io/LAENeRF/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/wpage.png" title="Webpage"></a>
-                            <a href="https://github.com/r4dl/LAENeRF"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/github.png" title="Code"></a>
-                            <a href="https://www.youtube.com/watch?v=HwQ1x0Fb2Qc"><img style="height:30px; margin: 3.5px" src="ims/vid.png" title="Video"></a>
-                            <a href="https://drive.google.com/file/d/1y8e2q-6HJz2YcBoWqZJl9OR3NhMYVPgT/view?usp=sharing"><img style="height:29px; margin: 3.5px; padding: 0.5px"
+                            <a href="https://arxiv.org/pdf/2312.09913.pdf"><img img class="ai-symbol" style="height:28px; margin: 3.5px; padding: 1px" src="ims/pdf.png" title="Paper"></a>
+                            <a href="https://r4dl.github.io/LAENeRF/"><img img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/wpage.png" title="Webpage"></a>
+                            <a href="https://github.com/r4dl/LAENeRF"><img img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/github.png" title="Code"></a>
+                            <a href="https://www.youtube.com/watch?v=HwQ1x0Fb2Qc"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="ims/vid.png" title="Video" ></a>
+                            <a href="https://drive.google.com/file/d/1y8e2q-6HJz2YcBoWqZJl9OR3NhMYVPgT/view?usp=sharing"><img img class="ai-symbol" style="height:29px; margin: 3.5px; padding: 0.5px"
                                 src="ims/data.png" title="Data"></a>
-                            <a href="data/Radl2023LAENeRF.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="ims/citation.png" title="Bibtex"></a>
+                            <a href="data/Radl2023LAENeRF.bib"><img img class="ai-symbol" style="height:25px; margin: 3.5px; padding: 2.5px" src="ims/citation.png" title="Bibtex"></a>
                         </p>
                     </td>
                 </tr>
@@ -164,13 +206,13 @@
                             allows for faster inference and comparable visual quality.
                         </p>
                         <p style="text-align:left">
-                            <a href="https://arxiv.org/pdf/2306.00696.pdf"><img style="height:28px; margin: 3.5px; padding: 1px" src="ims/pdf.png" title="Paper"></a>
-                            <a href="https://r4dl.github.io/nerfinternals/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/wpage.png" title="Webpage"></a>
-                            <a href="https://github.com/r4dl/nerfinternals"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/github.png" title="Code"></a>
-                            <img style="height:30px; margin: 3.5px; opacity: 25%" src="ims/vid.png">
-                            <a href="https://drive.google.com/file/d/1whGVEQ-LvpsgYZGxQvOA5tYcJ8N_sc-9/view"><img style="height:29px; margin: 3.5px; padding: 0.5px"
+                            <a href="https://arxiv.org/pdf/2306.00696.pdf"><img img class="ai-symbol" style="height:28px; margin: 3.5px; padding: 1px" src="ims/pdf.png" title="Paper"></a>
+                            <a href="https://r4dl.github.io/nerfinternals/"><img img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/wpage.png" title="Webpage"></a>
+                            <a href="https://github.com/r4dl/nerfinternals"><img img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/github.png" title="Code"></a>
+                            <img class="ai-symbol-hidden" style="height:30px; margin: 3.5px;" src="ims/vid.png">
+                            <a href="https://drive.google.com/file/d/1whGVEQ-LvpsgYZGxQvOA5tYcJ8N_sc-9/view"><img img class="ai-symbol" style="height:29px; margin: 3.5px; padding: 0.5px"
                                 src="ims/data.png" title="Data"></a>
-                            <a href="data/Radl2023Analyzing.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="ims/citation.png" title="Bibtex"></a>
+                            <a href="data/Radl2023Analyzing.bib"><img img class="ai-symbol" style="height:25px; margin: 3.5px; padding: 2.5px" src="ims/citation.png" title="Bibtex"></a>
                         </p>
                     </td>
                 </tr>
@@ -193,13 +235,13 @@
                         <p>Method and apparatus for aorta segmentation in Slicer3D, as well as an open-source CTA dataset with ground-truth annotations, to be used in research.
                         </p>
                         <p style="text-align:left">
-                            <a href="https://www.sciencedirect.com/science/article/pii/S2352340922000130"><img style="height:28px; margin: 3.5px; padding: 1px" src="ims/pdf.png" title="Paper"></a>
-                            <img style="height:27px; margin: 3.5px; padding: 1.5px; opacity: 25%" src="ims/wpage.png" title="Webpage">
-                           <img style="height:27px; margin: 3.5px; opacity: 25%; padding: 1.5px" src="ims/github.png">
-                            <img style="height:30px; margin: 3.5px; opacity: 25%" src="ims/vid.png">
-                            <a href="https://figshare.com/articles/dataset/Aortic_Vessel_Tree_AVT_CTA_Datasets_and_Segmentations/14806362"><img style="height:29px; margin: 3.5px; padding: 0.5px"
+                            <a href="https://www.sciencedirect.com/science/article/pii/S2352340922000130"><img img class="ai-symbol" style="height:28px; margin: 3.5px; padding: 1px" src="ims/pdf.png" title="Paper"></a>
+                            <img class="ai-symbol-hidden" style="height:27px; margin: 3.5px; padding: 1.5px;" src="ims/wpage.png">
+                            <img class="ai-symbol-hidden" style="height:27px; margin: 3.5px; padding: 1.5px" src="ims/github.png">
+                            <img class="ai-symbol-hidden" style="height:30px; margin: 3.5px;" src="ims/vid.png">
+                            <a href="https://figshare.com/articles/dataset/Aortic_Vessel_Tree_AVT_CTA_Datasets_and_Segmentations/14806362"><img img class="ai-symbol" style="height:29px; margin: 3.5px; padding: 0.5px"
                                                                                                                                                 src="ims/data.png" title="Data"></a>
-                            <a href="data/Radl2022AVT.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="ims/citation.png" title="Bibtex"></a>
+                            <a href="data/Radl2022AVT.bib"><img img class="ai-symbol" style="height:25px; margin: 3.5px; padding: 2.5px" src="ims/citation.png" title="Bibtex"></a>
                         </p>
                     </td>
                 </tr>
@@ -276,6 +318,24 @@
                             </li>
                         </ul>
                     </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Reviewing -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; padding: 10px">
+                <tbody>
+                <tr>
+                    <td colspan="2" style="padding:2.5%:">
+                        <h2>Reviewing</h2>
+                        <p>
+                            Starting 2024, I have been reviewing for several journals and conferences!
+                        </p>
+                        <ul>
+                            <li> Computers & Graphics </li>
+                        </ul>
+                    </td>
+                <tr>
                 </tr>
                 </tbody>
             </table>

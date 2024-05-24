@@ -102,6 +102,18 @@ h2 {
   font-weight: 700;
 }
 
+.ai-symbol {
+  opacity: 80%;
+}
+
+.ai-symbol:hover {
+  opacity: 100%;
+}
+
+.ai-symbol-hidden {
+  opacity: 15%;
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
