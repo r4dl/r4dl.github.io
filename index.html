@@ -115,8 +115,8 @@
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='stp_image'>                                
-                                <img src='ims/stp.gif' width=100%></div>
-                                <img src='ims/stp.jpg' width=100%>
+                                <img src='ims/paper_stuff/stp.gif' width=100%></div>
+                                <img src='ims/paper_stuff/stp.jpg' width=100%>
                               </div>
                               <script type="text/javascript">
                                 function stp_start() {
@@ -157,9 +157,23 @@
                             </p>
                         </td>
                     </tr>
-                <tr>
+                <tr onmouseout="lae_stop()" onmouseover="lae_start()">
                     <td style="padding:20px;width:25%;vertical-align:middle">
-                        <img src="ims/paper_stuff/stylizedflower.png" alt="clean-usnob" width="160" height="160">
+                        <div class="one">
+                            <div class="two" id='lae_image'>                                
+                            <img src='ims/paper_stuff/laenerf.gif' width=100%></div>
+                            <img src='ims/paper_stuff/laenerf.png' width=100%>
+                          </div>
+                          <script type="text/javascript">
+                            function lae_start() {
+                              document.getElementById('lae_image').style.opacity = "1";
+                            }
+                  
+                            function lae_stop() {
+                              document.getElementById('lae_image').style.opacity = "0";
+                            }
+                            lae_stop()
+                          </script>
                     </td>
                     <td width="75%" valign="middle">
                         <a href="https://r4dl.github.io/LAENeRF/">
