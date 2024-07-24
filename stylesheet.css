@@ -121,6 +121,10 @@ h2 {
   font-size: 32px;
 }
 
+/* a.titleofpaper:link {color: #ff0000;}
+a.titleofpaper:visited {color: #0000ff;}
+a.titleofpaper:hover {color: #ffcc00;} */
+
 .one {
   width: 160px;
   height: 160px;

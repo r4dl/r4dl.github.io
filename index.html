@@ -84,8 +84,9 @@
                         <td style="padding:20px;width:100%;vertical-align:middle">
                             <h2>News</h2>
                             <ul>
+                                <li><b>07/24:</b> I'll be in Denver for <a href="https://www.highperformancegraphics.org/2024/">HPG 2024</a> and <a href="https://s2024.siggraph.org/">SIGGRAPH 2024</a> to present <b><a href="https://r4dl.github.io/StopThePop/">StopThePop</a></b>!</li>
                                 <li><b>06/24:</b> I'm attending <a href="https://cvpr.thecvf.com/Conferences/2024">CVPR 2024</a> in Seattle to present <b><a href="https://r4dl.github.io/nerfinternals/">NeRF Internals</a></b> and <b><a href="https://r4dl.github.io/LAENeRF/">LAENeRF</a></b>!</li>
-                                <li><b>05/24:</b> <strong><a href="https://r4dl.github.io/StopThePop/">StopThePop</a></strong> has been accepted to SIGGRAPH'24 and will appear in ACM TOG 43(4).</li>
+                                <li><b>05/24:</b> <strong><a href="https://r4dl.github.io/StopThePop/">StopThePop</a></strong> has been accepted to SIGGRAPH'24 <strong style="color: red;">(Journal Track)</strong> and will appear in ACM TOG 43(4).</li>
                                 <li><b>04/24:</b> Our <strong><a href="https://r4dl.github.io/nerfinternals/">NeRF Internals</a></strong> paper has been accepted to the CVPR'24 <a href="https://neural-rendering.com/">Workshop on Neural Rendering Intelligence</a>!</li>
                                 <li><b>02/24:</b> <strong><a href="https://r4dl.github.io/LAENeRF/">LAENeRF</a></strong> has been accepted to CVPR'24!</li>
                                 <li><b>02/24:</b> This page first goes online!</li>
@@ -111,13 +112,12 @@
             </table>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
-                <tr>
                     <tr onmouseout="stp_stop()" onmouseover="stp_start()">
                         <td style="padding:20px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='stp_image'>                                
-                                <img src='ims/paper_stuff/stp.gif' width=100%></div>
-                                <img src='ims/paper_stuff/stp.jpg' width=100%>
+                                <a href="https://r4dl.github.io/StopThePop/"><img src='ims/paper_stuff/stp/stp.gif' width=100%></a></div>
+                                <a href="https://r4dl.github.io/StopThePop/"><img src='ims/paper_stuff/stp/stp.jpg' width=100%></a>
                               </div>
                               <script type="text/javascript">
                                 function stp_start() {
@@ -162,8 +162,8 @@
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='lae_image'>                                
-                            <img src='ims/paper_stuff/laenerf.gif' width=100%></div>
-                            <img src='ims/paper_stuff/laenerf.png' width=100%>
+                            <a href="https://r4dl.github.io/LAENeRF/"><img src='ims/paper_stuff/laenerf/laenerf.gif' width=100%></a></div>
+                            <a href="https://r4dl.github.io/LAENeRF/"><img src='ims/paper_stuff/laenerf/laenerf.png' width=100%></a>
                           </div>
                           <script type="text/javascript">
                             function lae_start() {
@@ -202,9 +202,23 @@
                         </p>
                     </td>
                 </tr>
-                <tr>
+                <tr onmouseout="act_stop()" onmouseover="act_start()">
                     <td style="padding:20px;width:25%;vertical-align:middle">
-                        <img src="ims/paper_stuff/activation.png" alt="clean-usnob" width="160" height="160">
+                        <div class="one">
+                            <div class="two" id='act_image'>                                
+                            <a href="https://r4dl.github.io/nerfinternals/"><img src='ims/paper_stuff/nerfinternals/activation.gif' width=100%></a></div>
+                            <a href="https://r4dl.github.io/nerfinternals/"><img src='ims/paper_stuff/nerfinternals/activation.png' width=100%></a>
+                          </div>
+                          <script type="text/javascript">
+                            function act_start() {
+                              document.getElementById('act_image').style.opacity = "1";
+                            }
+                  
+                            function act_stop() {
+                              document.getElementById('act_image').style.opacity = "0";
+                            }
+                            act_stop()
+                          </script>
                     </td>
                     <td width="75%" valign="middle">
                         <a href="https://r4dl.github.io/nerfinternals/">
@@ -233,17 +247,17 @@
                 </tr>
                 <tr>
                     <td style="padding:20px;width:25%;vertical-align:middle">
-                        <img src="ims/paper_stuff/aorta.png" alt="clean-usnob" width="160" height="160">
+                        <img src="ims/paper_stuff/avt/aorta.png" alt="clean-usnob" width="160" height="160">
                     </td>
                     <td width="75%" valign="middle">
                         <span class="papertitle">AVT: Multicenter aortic vessel tree CTA dataset collection with ground truth segmentation masks</span>
                         <br>
                         <strong>Lukas Radl</strong>,
-                        Yuan Jin,
+                        <a href="https://scholar.google.com/citations?user=nv5oF-AAAAAJ&hl=zh-CN">Yuan Jin</a>,
                         <a href="https://scholar.google.it/citations?user=WBpVbLsAAAAJ&hl=it">Antonio Pepe</a>,
                         <a href="https://jianningli.me/">Jianning Li</a>,
                         <a href="https://scholar.google.at/citations?user=1bnb71gAAAAJ&hl=de">Christina Gsaxner</a>,
-                        Fen-hua Zhao,
+                        <a href="https://www.researchgate.net/profile/Fen-Hua-Zhao">Fen-hua Zhao</a>,
                         <a href="http://www.janegger.de/">Jan Egger</a>.
                         <br>
                         <em>Data in Brief (40)</em>, 2022.
@@ -284,6 +298,9 @@
                         <h4>2022/23</h4>
                         <ul>
                             <li>
+                                <strong>Real-Time Graphics:</strong> Exercise ❄️
+                            </li>
+                            <li>
                                 <strong>Mathematical Principles in Visual Computing:</strong> Exercise ☀️
                             </li>
                             <li>
@@ -292,20 +309,17 @@
                             <li>
                                 <strong>Computer Vision:</strong> Exercise ☀️
                             </li>
-                            <li>
-                                <strong>Real-Time Graphics:</strong> Exercise ❄️
-                            </li>
                         </ul>
                         <h4>2021/22</h4>
                         <ul>
+                            <li>
+                                <strong>Real-Time Graphics:</strong> Exercise ❄️
+                            </li>
                             <li>
                                 <strong>Computergraphics:</strong> Exercise ☀️
                             </li>
                             <li>
                                 <strong>Computer Vision:</strong> Exercise ☀️
-                            </li>
-                            <li>
-                                <strong>Real-Time Graphics:</strong> Exercise ❄️
                             </li>
                         </ul>
                         <h4>2020/21</h4>
@@ -323,13 +337,25 @@
                         <p>
                             Since starting my PhD, I'm now coordinating exercises for visual computing courses.
                         </p>
-                        <h4>2023/24</h4>
+                        <h4>2024/25</h4>
                         <ul>
+                            <li>
+                                <strong>Real-Time Graphics:</strong> Exercise ❄️
+                            </li>
+                            <li>
+                                <strong>Object-Oriented Programming 1:</strong> Exercise ❄️
+                            </li>
                             <li>
                                 <strong>Computergraphics:</strong> Exercise ☀️
                             </li>
+                        </ul>
+                        <h4>2023/24</h4>
+                        <ul>
                             <li>
                                 <strong>Real-Time Graphics:</strong> Exercise ❄️
+                            </li>
+                            <li>
+                                <strong>Computergraphics:</strong> Exercise ☀️
                             </li>
                         </ul>
                     </td>
