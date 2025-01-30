@@ -103,6 +103,7 @@ h2 {
 }
 
 .ai-symbol {
+  display: inline-block; 
   opacity: 80%;
   transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
