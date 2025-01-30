@@ -104,10 +104,12 @@ h2 {
 
 .ai-symbol {
   opacity: 80%;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
 .ai-symbol:hover {
   opacity: 100%;
+  transform: scale(1.1);
 }
 
 .ai-symbol-hidden {
