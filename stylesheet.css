@@ -102,6 +102,16 @@ h2 {
   font-weight: 700;
 }
 
+.icon-bar {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start; /* aligns left */
+}
+
+.icon-bar i {
+  font-size: 28px;
+}
+
 .ai-symbol {
   display: inline-block; 
   opacity: 80%;
@@ -151,4 +161,22 @@ a.titleofpaper:hover {color: #ffcc00;} */
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow the icons to wrap to a new row if space is tight */
+    gap: 8px;        /* Spacing between icons */
+    justify-content: center; /* Center the icons within the row */
+    padding: 8px 0;
+    text-align: left;
+}
+
+.icon-row img.ai-symbol {
+    height: 28px;    /* Set a base height for the images */
+    padding: 2px;    /* Padding around the images */
+    flex-grow: 1;     /* Allow the images to grow and fill available space */
+    flex-shrink: 1;   /* Allow the images to shrink when space is tight */
+    max-width: 100%;  /* Prevent images from growing too large */
+    object-fit: contain; /* Make sure the image doesn't get distorted */
 }
