@@ -57,22 +57,6 @@
                                     </p>
                                     <p
                                         style="text-align: center; color: #555; margin: -8px 0 10px 0; display: flex; align-items: center; justify-content: center; gap: 8px; font-size:small;">
-                                        <!-- Location Pin SVG -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#555"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 0C5.243 0 3 2.243 3 5c0 3.25 4.074 8.066 4.256 8.278a.5.5 0 0 0 .744 0C8.926 13.066 13 8.25 13 5c0-2.757-2.243-5-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
-                                        </svg>
-
-                                        Currently in Zurich, CH
-
-                                        <!-- Swiss Flag SVG -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24">
-                                            <rect width="24" height="24" fill="#d52b1e" />
-                                            <path fill="#fff" d="M10 5h4v14h-4z" />
-                                            <path fill="#fff" d="M5 10h14v4H5z" />
-                                        </svg>
                                     </p>
                                     <p>I'm a <strong>University Assistant/PhD Student</strong> at the <a
                                             href="https://www.tugraz.at/institute/icg/home/">Institute of Visual
@@ -133,6 +117,12 @@
                                 <td style="padding:20px;">
                                     <h2 style="font-size:1.8em; margin-bottom:0.5em;">📰 News</h2>
                                     <ul style="padding: 0; margin: 0; padding-top: 15px;">
+                                      <li>
+                                            <b style="color: #333333;">10/25:</b>
+                                            <span style="margin-left: 5px;">
+                                                <strong><a href="https://r4dl.github.io/SOF">SOF</a></strong> has been accepted to <a href="https://asia.siggraph.org/2025/">SIGGRAPH ASIA'25</a>.
+                                            </span>
+                                        </li>
                                         <li>
                                             <b style="color: #333333;">05/25:</b>
                                             <span style="margin-left: 5px;">
@@ -143,7 +133,8 @@
                                         <li>
                                             <b style="color: #333333;">02/25:</b>
                                             <span style="margin-left: 5px;">
-                                                <strong><a href="">VRSplat</a></strong> has been accepted to I3D'25.
+                                                <strong><a href="https://ceka.cc/VRSplat/">VRSplat</a></strong> has been accepted to <a
+                                                    href="https://i3dsymposium.org/2025/">I3D'25</a>.
                                             </span>
                                         </li>
                                         <li>
@@ -244,6 +235,48 @@
                     <table
                         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+<!-- #region SOF -->
+                            <tr onmouseover="setOpacity('sof_gif', '1')" onmouseout="setOpacity('sof_gif', '0')">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id="sof_gif" style="opacity: 0;">
+                                            <a href="https://r4dl.github.io/SOF/"><img
+                                                    src="ims/paper_stuff/sof/teaser.gif" width="100%"></a>
+                                        </div>
+                                        <a href="https://r4dl.github.io/SOF/"><img
+                                                src="ims/paper_stuff/sof/STILL_SOF_00000.png" width="100%"></a>
+                                    </div>
+                                </td>
+                                <td width="75%" valign="middle">
+                                    <a href="/"><span class="papertitle">SOF: Sorted Opacity Fields for Fast Unbounded Surface Reconstruction</span></a>
+                                    <br>
+                                    <strong>Lukas Radl</strong>,
+                                    <a href="https://scholar.google.com/citations?user=J_Jm3Y4AAAAJ&hl=en/">Felix Windisch</a>,
+                                    <a href="https://scholar.google.com/citations?user=q3KITmQAAAAJ&hl=en">Thomas Deixelberger</a>,
+                                    <a href="https://jozef.hladky.de/">Jozef Hladky</a>,
+                                    <a href="https://steimich96.github.io/">Michael Steiner</a>,
+                                    <a href="https://www.vis.uni-stuttgart.de/team/Schmalstieg/">Dieter Schmalstieg</a>,
+                                    <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                                    <br>
+                                    <em>SIGGRAPH Asia</em>, 2025.
+                                    <p>
+                                        We analyze and improve Gaussian Opacity Fields, and incorporate per-pixel sorting, exact depth and novel losses 
+                                        to enable rapid extraction of unbounded meshes from 3D Gaussians.
+                                    </p>
+                                    <div class="icon-bar">
+                                        <a class="ai-symbol" href="https://www.arxiv.org/pdf/2506.19139" title="Paper"><i class="fas fa-file-pdf "></i></a>
+                                        <a class="ai-symbol" href="https://r4dl.github.io/SOF" title="Webpage"><i class="fas fa-globe "></i></a>
+                                        <!-- <a class="ai-symbol" href="https://github.com/r4dl/SOF" title="Code"><i class="fab fa-github "></i></a> -->
+                                        <i class="fab fa-github ai-symbol-hidden"></i>
+                                        <i class="fab fa-youtube ai-symbol-hidden"></i>
+                                        <i class="fas fa-database ai-symbol-hidden"></i>
+                                        <!-- <a class="ai-symbol" href="" title="Video"><i class="fab fa-youtube "></i></a>
+                                        <a class="ai-symbol" href="" title="Data"><i class="fas fa-database "></i></a> -->
+                                        <a class="ai-symbol" href="data/Radl2025SOF.bib" title="Bibtex"><i class="fas fa-quote-right "></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+<!-- #endregion -->
                             <!-- #region Splintercell -->
                             <tr onmouseover="setOpacity('splintercell_gif', '1')"
                                 onmouseout="setOpacity('splintercell_gif', '0')">
@@ -425,7 +458,7 @@
                                     <br>
                                     <strong><a href="https://steimich96.github.io/">Michael Steiner</a></strong>,
                                     <a href="https://scholar.google.com/citations?user=pMDepi0AAAAJ&hl=en">Thomas
-                                        Köhler</a>
+                                        Köhler</a>,
                                     <strong>Lukas Radl</strong>,
                                     <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
                                     <br>
