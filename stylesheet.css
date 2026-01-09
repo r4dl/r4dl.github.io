@@ -180,3 +180,12 @@ span.highlight {
     max-width: 100%;  /* Prevent images from growing too large */
     object-fit: contain; /* Make sure the image doesn't get distorted */
 }
+
+@media (max-width: 700px) {
+  html, body { overflow-x: hidden; }
+  table { width: 100%; table-layout: auto; }
+  td { padding: 12px 10px !important; box-sizing: border-box; }
+  .one, .two { width: 100%; height: auto; }
+  table img { max-width: 100%; height: auto; }
+  .icon-bar { flex-wrap: wrap; justify-content: center; }
+}
