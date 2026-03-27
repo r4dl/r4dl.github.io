@@ -74,6 +74,18 @@ a:hover {
   text-decoration: none;
 }
 
+/* Reusable style for links to projects that are currently in progress. */
+a.in-progress-link {
+  color: #7f8a96;
+  opacity: 0.8;
+}
+
+a.in-progress-link:focus,
+a.in-progress-link:hover {
+  color: #6f7a86;
+  opacity: 0.95;
+}
+
 body,
 td,
 th,
@@ -104,12 +116,12 @@ h2 {
 
 .icon-bar {
   display: flex;
-  gap: 14px;
+  gap: 13px;
   justify-content: flex-start; /* aligns left */
 }
 
 .icon-bar i {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .ai-symbol {
